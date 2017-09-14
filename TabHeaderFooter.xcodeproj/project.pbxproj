@@ -15,6 +15,7 @@
 		D25BC4D41F6A4C7100B01532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25BC4D21F6A4C7100B01532 /* LaunchScreen.storyboard */; };
 		D25BC4DF1F6A4C7100B01532 /* TabHeaderFooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BC4DE1F6A4C7100B01532 /* TabHeaderFooterTests.m */; };
 		D25BC4EA1F6A4C7100B01532 /* TabHeaderFooterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BC4E91F6A4C7100B01532 /* TabHeaderFooterUITests.m */; };
+		D25BC4FE1F6A5A5800B01532 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = D25BC4FD1F6A5A5800B01532 /* footer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D25BC4E51F6A4C7100B01532 /* TabHeaderFooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabHeaderFooterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25BC4E91F6A4C7100B01532 /* TabHeaderFooterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabHeaderFooterUITests.m; sourceTree = "<group>"; };
 		D25BC4EB1F6A4C7100B01532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25BC4FD1F6A5A5800B01532 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +103,10 @@
 		D25BC4C31F6A4C7100B01532 /* TabHeaderFooter */ = {
 			isa = PBXGroup;
 			children = (
-				D25BC4C71F6A4C7100B01532 /* AppDelegate.h */,
-				D25BC4C81F6A4C7100B01532 /* AppDelegate.m */,
+				D25BC4CD1F6A4C7100B01532 /* Main.storyboard */,
 				D25BC4CA1F6A4C7100B01532 /* ViewController.h */,
 				D25BC4CB1F6A4C7100B01532 /* ViewController.m */,
-				D25BC4CD1F6A4C7100B01532 /* Main.storyboard */,
-				D25BC4D01F6A4C7100B01532 /* Assets.xcassets */,
-				D25BC4D21F6A4C7100B01532 /* LaunchScreen.storyboard */,
-				D25BC4D51F6A4C7100B01532 /* Info.plist */,
+				D25BC4FD1F6A5A5800B01532 /* footer.png */,
 				D25BC4C41F6A4C7100B01532 /* Supporting Files */,
 			);
 			path = TabHeaderFooter;
@@ -117,6 +115,11 @@
 		D25BC4C41F6A4C7100B01532 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D25BC4C71F6A4C7100B01532 /* AppDelegate.h */,
+				D25BC4C81F6A4C7100B01532 /* AppDelegate.m */,
+				D25BC4D01F6A4C7100B01532 /* Assets.xcassets */,
+				D25BC4D21F6A4C7100B01532 /* LaunchScreen.storyboard */,
+				D25BC4D51F6A4C7100B01532 /* Info.plist */,
 				D25BC4C51F6A4C7100B01532 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -248,6 +251,7 @@
 			files = (
 				D25BC4D41F6A4C7100B01532 /* LaunchScreen.storyboard in Resources */,
 				D25BC4D11F6A4C7100B01532 /* Assets.xcassets in Resources */,
+				D25BC4FE1F6A5A5800B01532 /* footer.png in Resources */,
 				D25BC4CF1F6A4C7100B01532 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
