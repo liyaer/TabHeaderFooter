@@ -9,11 +9,16 @@
 #import "ViewController.h"
 
 
+#define DScreenWidth [UIScreen mainScreen].bounds.size.width
 
 
 #pragma mark - 类的扩展
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic,strong) UIView *headerView;
+
+@property (nonatomic,strong) UILabel *titleLabel;
 
 @property (nonatomic,strong) UITableView *tableView;
 
@@ -28,12 +33,33 @@
 
 #pragma mark - 懒加载
 
+-(UIView *)headerView
+{
+    if (!_headerView)
+    {
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DScreenWidth, 80)];
+        _headerView.backgroundColor = [UIColor redColor];
+        [_headerView addSubview:self.titleLabel];
+    }
+    return _headerView;
+}
+
+-(UILabel *)titleLabel
+{
+    if (!_titleLabel)
+    {
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 300, 30)];
+        _titleLabel.textColor = [UIColor yellowColor];
+    }
+    return _titleLabel;
+}
+
 -(UITableView *)tableView
 {
     if (!_tableView)
     {
 #warning tableView的style为plain，section的头、尾视图、标题会有悬浮效果，group则没有。（是否悬浮只与style有关，即便当前VC是被push或者present进来的，是否悬浮也只取决与tableView的style）
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:0];
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:1];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         
@@ -41,15 +67,8 @@
 //        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"du"];
         
         //设置tableView的头、尾视图
-        UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 80)];
-        headerView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-        //添加子视图
-        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 300, 30)];
-        titleLabel.text = @"tableView的头视图";
-        titleLabel.textColor = [UIColor purpleColor];
-        [headerView addSubview:titleLabel];
-        
-        [_tableView setTableHeaderView:headerView];
+        [_tableView setTableHeaderView:self.headerView];
+        _titleLabel.text = @"tableView的头视图";
     }
     return _tableView;
 }
@@ -95,7 +114,7 @@
 }
 
 #warning section的头视图、头标题同时只能存在一种
-//头视图
+//section头视图
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     //对于同种类型的header，进行复用
@@ -105,20 +124,21 @@
 //    return [self dontReuseHeader:section];
 }
 
-//头标题
+//section头标题
 //-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 //{
 //    return section ? @"还有这种操作？" : @"除了头视图，还有头标题";
 //}
 
-//指定头视图 \ 头标题的高度
+//指定section头视图 \ 头标题的高度
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 40;
+//    return section == 0 ? 40 : 0.1;
 }
 
 #warning section的尾视图、尾标题同时只能存在一种
-//尾视图
+//section尾视图
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
     //footer的用法和header一样，这里仅以操作header为例
@@ -137,13 +157,13 @@
     return footer;
 }
 
-//尾标题
+//section尾标题
 //-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
 //{
 //    return @"一切参考头标题";
 //}
 
-//指定尾视图 \ 尾标题的高度
+//指定section尾视图 \ 尾标题的高度
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     return 40;
@@ -168,10 +188,12 @@
         header.contentView.backgroundColor = [UIColor greenColor];
         
         //添加子视图
-        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 300, 30)];
-        titleLabel.textColor = [UIColor purpleColor];
-        titleLabel.tag = 10086;
-        [header addSubview:titleLabel];
+        if (_titleLabel)
+        {
+            _titleLabel = nil;
+        }
+        [header addSubview:self.titleLabel];
+        _titleLabel.tag = 10086;
     }
     
     //给header赋值
@@ -190,10 +212,12 @@
         UIView *headerView = [[UIView alloc] init];
         headerView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         //添加子视图
-        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 300, 30)];
-        titleLabel.text = [NSString stringWithFormat:@"--------%d--------",section];
-        titleLabel.textColor = [UIColor purpleColor];
-        [headerView addSubview:titleLabel];
+        if (_titleLabel)
+        {
+            _titleLabel = nil;
+        }
+        [headerView addSubview:self.titleLabel];
+        _titleLabel.text = [NSString stringWithFormat:@"--------%d--------",section];
         return headerView;
     }
     else
