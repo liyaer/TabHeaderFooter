@@ -8,15 +8,12 @@
 
 
 /*
- *  介绍cell的两种重用机制
  *  tableView的header和footer
- *  section的header和footer的重用和不重用
- *  section的header和footer是否悬浮的设置
  */
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TabHeaderFooterVC : UIViewController
 
 @end
 

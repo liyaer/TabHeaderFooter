@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		D25BC4C61F6A4C7100B01532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BC4C51F6A4C7100B01532 /* main.m */; };
 		D25BC4C91F6A4C7100B01532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BC4C81F6A4C7100B01532 /* AppDelegate.m */; };
-		D25BC4CC1F6A4C7100B01532 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BC4CB1F6A4C7100B01532 /* ViewController.m */; };
 		D25BC4CF1F6A4C7100B01532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25BC4CD1F6A4C7100B01532 /* Main.storyboard */; };
 		D25BC4D11F6A4C7100B01532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25BC4D01F6A4C7100B01532 /* Assets.xcassets */; };
 		D25BC4D41F6A4C7100B01532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25BC4D21F6A4C7100B01532 /* LaunchScreen.storyboard */; };
 		D25BC4DF1F6A4C7100B01532 /* TabHeaderFooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BC4DE1F6A4C7100B01532 /* TabHeaderFooterTests.m */; };
 		D25BC4EA1F6A4C7100B01532 /* TabHeaderFooterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BC4E91F6A4C7100B01532 /* TabHeaderFooterUITests.m */; };
-		D25BC4FE1F6A5A5800B01532 /* footer.png in Resources */ = {isa = PBXBuildFile; fileRef = D25BC4FD1F6A5A5800B01532 /* footer.png */; };
+		D25BC4FE1F6A5A5800B01532 /* footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D25BC4FD1F6A5A5800B01532 /* footer@2x.png */; };
+		D2DC39B92053F7390019DC5C /* CellDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC39B32053F7390019DC5C /* CellDemoVC.m */; };
+		D2DC39BA2053F7390019DC5C /* codeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC39B52053F7390019DC5C /* codeCell.m */; };
+		D2DC39BB2053F7390019DC5C /* XibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC39B72053F7390019DC5C /* XibCell.m */; };
+		D2DC39BC2053F7390019DC5C /* XibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DC39B82053F7390019DC5C /* XibCell.xib */; };
+		D2DC39C32053F77D0019DC5C /* SectionHFViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC39BF2053F77D0019DC5C /* SectionHFViewVC.m */; };
+		D2DC39C42053F77D0019DC5C /* TabHeaderFooterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC39C22053F77D0019DC5C /* TabHeaderFooterVC.m */; };
+		D2DC39C7205403860019DC5C /* SectionHFTitleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC39C6205403860019DC5C /* SectionHFTitleVC.m */; };
+		D2DC39CA20558CAE0019DC5C /* CodeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC39C920558CAE0019DC5C /* CodeHeader.m */; };
+		D2DC39CD20558CBF0019DC5C /* XibHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC39CC20558CBF0019DC5C /* XibHeader.m */; };
+		D2DC39D120558CDA0019DC5C /* XibHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DC39D020558CDA0019DC5C /* XibHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +49,6 @@
 		D25BC4C51F6A4C7100B01532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D25BC4C71F6A4C7100B01532 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D25BC4C81F6A4C7100B01532 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D25BC4CA1F6A4C7100B01532 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D25BC4CB1F6A4C7100B01532 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D25BC4CE1F6A4C7100B01532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D25BC4D01F6A4C7100B01532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D25BC4D31F6A4C7100B01532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,7 +59,25 @@
 		D25BC4E51F6A4C7100B01532 /* TabHeaderFooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabHeaderFooterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25BC4E91F6A4C7100B01532 /* TabHeaderFooterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabHeaderFooterUITests.m; sourceTree = "<group>"; };
 		D25BC4EB1F6A4C7100B01532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D25BC4FD1F6A5A5800B01532 /* footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footer.png; sourceTree = "<group>"; };
+		D25BC4FD1F6A5A5800B01532 /* footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footer@2x.png"; sourceTree = "<group>"; };
+		D2DC39B22053F7390019DC5C /* CellDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDemoVC.h; sourceTree = "<group>"; };
+		D2DC39B32053F7390019DC5C /* CellDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDemoVC.m; sourceTree = "<group>"; };
+		D2DC39B42053F7390019DC5C /* codeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeCell.h; sourceTree = "<group>"; };
+		D2DC39B52053F7390019DC5C /* codeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = codeCell.m; sourceTree = "<group>"; };
+		D2DC39B62053F7390019DC5C /* XibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCell.h; sourceTree = "<group>"; };
+		D2DC39B72053F7390019DC5C /* XibCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCell.m; sourceTree = "<group>"; };
+		D2DC39B82053F7390019DC5C /* XibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCell.xib; sourceTree = "<group>"; };
+		D2DC39BE2053F77D0019DC5C /* SectionHFViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHFViewVC.h; sourceTree = "<group>"; };
+		D2DC39BF2053F77D0019DC5C /* SectionHFViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHFViewVC.m; sourceTree = "<group>"; };
+		D2DC39C12053F77D0019DC5C /* TabHeaderFooterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabHeaderFooterVC.h; sourceTree = "<group>"; };
+		D2DC39C22053F77D0019DC5C /* TabHeaderFooterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabHeaderFooterVC.m; sourceTree = "<group>"; };
+		D2DC39C5205403860019DC5C /* SectionHFTitleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionHFTitleVC.h; sourceTree = "<group>"; };
+		D2DC39C6205403860019DC5C /* SectionHFTitleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionHFTitleVC.m; sourceTree = "<group>"; };
+		D2DC39C820558CAE0019DC5C /* CodeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeHeader.h; sourceTree = "<group>"; };
+		D2DC39C920558CAE0019DC5C /* CodeHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeHeader.m; sourceTree = "<group>"; };
+		D2DC39CB20558CBF0019DC5C /* XibHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibHeader.h; sourceTree = "<group>"; };
+		D2DC39CC20558CBF0019DC5C /* XibHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibHeader.m; sourceTree = "<group>"; };
+		D2DC39D020558CDA0019DC5C /* XibHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				D25BC4CD1F6A4C7100B01532 /* Main.storyboard */,
-				D25BC4CA1F6A4C7100B01532 /* ViewController.h */,
-				D25BC4CB1F6A4C7100B01532 /* ViewController.m */,
-				D25BC4FD1F6A5A5800B01532 /* footer.png */,
+				D2DC39B12053F7390019DC5C /* CellDemo */,
+				D2DC39BD2053F77D0019DC5C /* SectionH&FDemo */,
+				D2DC39C02053F77D0019DC5C /* TabH&FDemo */,
+				D25BC4FD1F6A5A5800B01532 /* footer@2x.png */,
 				D25BC4C41F6A4C7100B01532 /* Supporting Files */,
 			);
 			path = TabHeaderFooter;
@@ -141,6 +167,45 @@
 				D25BC4EB1F6A4C7100B01532 /* Info.plist */,
 			);
 			path = TabHeaderFooterUITests;
+			sourceTree = "<group>";
+		};
+		D2DC39B12053F7390019DC5C /* CellDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D2DC39B22053F7390019DC5C /* CellDemoVC.h */,
+				D2DC39B32053F7390019DC5C /* CellDemoVC.m */,
+				D2DC39B42053F7390019DC5C /* codeCell.h */,
+				D2DC39B52053F7390019DC5C /* codeCell.m */,
+				D2DC39B62053F7390019DC5C /* XibCell.h */,
+				D2DC39B72053F7390019DC5C /* XibCell.m */,
+				D2DC39B82053F7390019DC5C /* XibCell.xib */,
+			);
+			path = CellDemo;
+			sourceTree = "<group>";
+		};
+		D2DC39BD2053F77D0019DC5C /* SectionH&FDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D2DC39BE2053F77D0019DC5C /* SectionHFViewVC.h */,
+				D2DC39BF2053F77D0019DC5C /* SectionHFViewVC.m */,
+				D2DC39C820558CAE0019DC5C /* CodeHeader.h */,
+				D2DC39C920558CAE0019DC5C /* CodeHeader.m */,
+				D2DC39CB20558CBF0019DC5C /* XibHeader.h */,
+				D2DC39CC20558CBF0019DC5C /* XibHeader.m */,
+				D2DC39D020558CDA0019DC5C /* XibHeader.xib */,
+				D2DC39C5205403860019DC5C /* SectionHFTitleVC.h */,
+				D2DC39C6205403860019DC5C /* SectionHFTitleVC.m */,
+			);
+			path = "SectionH&FDemo";
+			sourceTree = "<group>";
+		};
+		D2DC39C02053F77D0019DC5C /* TabH&FDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D2DC39C12053F77D0019DC5C /* TabHeaderFooterVC.h */,
+				D2DC39C22053F77D0019DC5C /* TabHeaderFooterVC.m */,
+			);
+			path = "TabH&FDemo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +316,9 @@
 			files = (
 				D25BC4D41F6A4C7100B01532 /* LaunchScreen.storyboard in Resources */,
 				D25BC4D11F6A4C7100B01532 /* Assets.xcassets in Resources */,
-				D25BC4FE1F6A5A5800B01532 /* footer.png in Resources */,
+				D2DC39D120558CDA0019DC5C /* XibHeader.xib in Resources */,
+				D25BC4FE1F6A5A5800B01532 /* footer@2x.png in Resources */,
+				D2DC39BC2053F7390019DC5C /* XibCell.xib in Resources */,
 				D25BC4CF1F6A4C7100B01532 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,9 +344,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D25BC4CC1F6A4C7100B01532 /* ViewController.m in Sources */,
+				D2DC39C32053F77D0019DC5C /* SectionHFViewVC.m in Sources */,
+				D2DC39BB2053F7390019DC5C /* XibCell.m in Sources */,
 				D25BC4C91F6A4C7100B01532 /* AppDelegate.m in Sources */,
+				D2DC39C7205403860019DC5C /* SectionHFTitleVC.m in Sources */,
+				D2DC39CD20558CBF0019DC5C /* XibHeader.m in Sources */,
+				D2DC39CA20558CAE0019DC5C /* CodeHeader.m in Sources */,
+				D2DC39BA2053F7390019DC5C /* codeCell.m in Sources */,
+				D2DC39B92053F7390019DC5C /* CellDemoVC.m in Sources */,
 				D25BC4C61F6A4C7100B01532 /* main.m in Sources */,
+				D2DC39C42053F77D0019DC5C /* TabHeaderFooterVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +585,7 @@
 				D25BC4F01F6A4C7100B01532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D25BC4F11F6A4C7100B01532 /* Build configuration list for PBXNativeTarget "TabHeaderFooterTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +594,7 @@
 				D25BC4F31F6A4C7100B01532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D25BC4F41F6A4C7100B01532 /* Build configuration list for PBXNativeTarget "TabHeaderFooterUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +603,7 @@
 				D25BC4F61F6A4C7100B01532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
